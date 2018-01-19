@@ -1,0 +1,50 @@
+.slider-container {
+    height: 70vh;
+    margin: 10vh 5vw 0;
+    display: grid;
+    grid-template-columns: 6vw 1vw 76vw 1vw 6vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-image {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: 100%;
+}
+
+.middle-image {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.right-image {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    height: 100%;
+}
+
+.slider-div {
+    background-size: cover;
+}
+
+.bottom-text {
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.arrow {
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
